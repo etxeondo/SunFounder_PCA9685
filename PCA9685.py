@@ -48,7 +48,8 @@ class PWM(object):
     RPI_REVISION_3_MODULE_B  = ["a02082", "a22082", "a32082"]
     RPI_REVISION_3_MODULE_BP = ["a020d3"]
     RPI_REVISION_3_MODULE_AP = ["9020e0"]
-
+    RPI_REVISION_4_MODULE_B =  ["a03111", "b03111", "b03112", "c03111", "c03112"]
+''' https://www.raspberrypi.org/documentation/hardware/raspberrypi/revision-codes/README.md  '''    
     _DEBUG = False
     _DEBUG_INFO = 'DEBUG "PCA9685.py":'
 
