@@ -49,7 +49,7 @@ class PWM(object):
     RPI_REVISION_3_MODULE_BP = ["a020d3"]
     RPI_REVISION_3_MODULE_AP = ["9020e0"]
     RPI_REVISION_4_MODULE_B =  ["a03111", "b03111", "b03112", "c03111", "c03112"]
-''' https://www.raspberrypi.org/documentation/hardware/raspberrypi/revision-codes/README.md  '''    
+  
     _DEBUG = False
     _DEBUG_INFO = 'DEBUG "PCA9685.py":'
 
@@ -72,8 +72,6 @@ class PWM(object):
         elif pi_revision == '3 Module B+':
             return 1
         elif pi_revision == '3 Module A+':
-            return 1
-        elif pi_revision == '4 Module A':
             return 1
         elif pi_revision == '4 Module B':
             return 1
@@ -105,8 +103,6 @@ class PWM(object):
                         return '3 Module B+'
                     elif line[11:-1] in self.RPI_REVISION_3_MODULE_AP:
                         return '3 Module A+'
-                    elif line[11:-1] in self.RPI_REVISION_4_MODULE_A:
-                        return '4 Module A'
                     elif line[11:-1] in self.RPI_REVISION_4_MODULE_B:
                         return '4 Module B'
                     else:
